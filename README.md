@@ -1,11 +1,11 @@
+# La Fuente - Hotel Booking Platform
 
-# Bookly - Hotel Booking Platform
-
-**Bookly** is a modern hotel booking platform built with **Next.js** and **TypeScript**, integrated with **Stripe** for payments and **MongoDB** for data management. This platform allows users to search for hotels, make reservations, leave reviews, and manage their bookings, while providing administrators with comprehensive control over the platform's operations.
+**La Fuente** is a modern hotel booking platform built with **Next.js** and **TypeScript**, integrated with **Stripe** for payments and **MongoDB** for data management. This platform allows users to search for hotels, make reservations, leave reviews, and manage their bookings, while providing administrators with comprehensive control over the platform's operations.
 
 ## Features
 
 ### User Functionality
+
 - **Hotel Booking**: Search for hotels, view room details, and make reservations.
 - **Review and Rating**: Add reviews and rate hotels after booking.
 - **Booking Management**: View and manage your bookings.
@@ -14,6 +14,7 @@
 - **Password Recovery**: If a user forgets their password, an email with a password reset link is sent to their Gmail account using Nodemailer.
 
 ### Admin Functionality
+
 - **User Management**: View and manage all users.
 - **Room Management**: Create, update, and delete rooms.
 - **Booking Management**: Oversee all bookings and their statuses.
@@ -21,6 +22,7 @@
 - **Role Management**: Change user roles and permissions.
 
 ### Technology Stack
+
 - **Next.js**: Framework for server-side rendering and building the React application.
 - **TypeScript**: Adds type safety and improves development experience.
 - **Stripe**: Handles secure payment processing.
@@ -37,6 +39,7 @@ After cloning the repository, you need to configure your environment variables. 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js and npm installed.
 - MongoDB instance set up.
 - Stripe account for payment processing.
@@ -45,23 +48,27 @@ After cloning the repository, you need to configure your environment variables. 
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/UlviParviz/nextjs-mongo-hotel-booking.git
+   git clone https://github.com/pedropcamellon/la-fuente-motel.git
    ```
 
 2. **Navigate to the project directory:**
+
    ```bash
-   cd nextjs-mongo-hotel-booking
+   cd la-fuente-motel
    ```
 
 3. **Install dependencies:**
+
    ```bash
-   npm install
+   pnpm install
    ```
 
 4. **Run the development server:**
+
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
    Navigate to `http://localhost:3000` in your browser to see the application.
@@ -69,6 +76,7 @@ After cloning the repository, you need to configure your environment variables. 
 ## Usage
 
 ### For Users
+
 - **Browse Hotels**: Use the search functionality to find hotels by location, date, and room type.
 - **Make a Reservation**: Select a hotel, choose a room, and complete the booking process.
 - **Review and Rate**: After booking, leave a review and rate the hotel.
@@ -78,9 +86,9 @@ After cloning the repository, you need to configure your environment variables. 
 - **Password Recovery**: Request a password reset email if you forget your password.
 
 ### For Admins
+
 - **User Management**: View, edit, or delete user accounts.
 - **Room Management**: Add, update, or remove rooms from the platform.
 - **Booking Oversight**: Manage all bookings and review their statuses.
 - **Review Moderation**: Approve or remove reviews.
 - **Role Management**: Change user roles and permissions as needed.
-

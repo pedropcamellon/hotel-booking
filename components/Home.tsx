@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
-import RoomItem from "./room/RoomItem";
-import { IRoom } from "@/server/models/room.model";
-import CustomPagination from "./layout/CustomPagination";
-import Rooms from "./room/Rooms";
-import Banner from "./Banner";
 import { useSearchParams } from "next/navigation";
+
+import React from "react";
+
+import { IRoom } from "@/server/models/room.model";
+import Banner from "./Banner";
+import Rooms from "./room/Rooms";
 
 interface Props {
   data: {
@@ -24,7 +24,8 @@ const Home = ({ data }: Props) => {
   return (
     <div>
       {location || guest || category ? <div></div> : <Banner />}
-      <Rooms data={data} />
+
+      {data && <Rooms data={data} />}
     </div>
   );
 };

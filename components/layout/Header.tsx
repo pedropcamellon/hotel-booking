@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { setIsAuthenticated, setUser } from "@/redux/features/userSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { signOut, useSession } from "next-auth/react";
@@ -21,30 +22,16 @@ const Header = () => {
     }
   }, [data]);
 
-  const handleLogoClick = (e: any) => {
-    e.preventDefault();
-    router.push("/");
-  };
-
   const logoutHandler = () => {
     signOut();
   };
 
   return (
-    <nav className="navbar sticky-top p-0">
+    <nav className="navbar sticky-top py-2">
       <div className="container">
         <div className="col-6 col-lg-3 p-0">
           <div className="navbar-brand p-0">
-            <Link href="/" passHref>
-              <Image
-                onClick={handleLogoClick}
-                style={{ cursor: "pointer" }}
-                src="/images/logo_size.jpg"
-                alt="Bookly"
-                width={110}
-                height={105}
-              />
-            </Link>
+            <h3 className="mb-0">La Fuente Motel</h3>
           </div>
         </div>
 
@@ -60,7 +47,7 @@ const Header = () => {
               >
                 <figure className="avatar avatar-nav">
                   <Image
-                    src={user?.avatar?.url  || "/images/default_avatar.jpg"}
+                    src={user?.avatar?.url || "/images/default_avatar.jpg"}
                     alt={`${user.name}`}
                     className="rounded-circle placeholder-glow"
                     width={50}
